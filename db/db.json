@@ -1,0 +1,173 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Avatar: The Way of Water",
+      "originalTitle": "Avatar: The Way of Water",
+      "description": "Jake Sully sống cùng gia đình mới của mình trên hành tinh Pandora. Khi một mối đe dọa quen thuộc trở lại để hoàn thành những gì đã bắt đầu trước đây, Jake phải làm việc với Neytiri và quân đội của chủng tộc Na'vi để bảo vệ hành tinh của họ.",
+      "duration": 192,
+      "releaseDate": "2022-12-16",
+      "genre": ["Hành động", "Phiêu lưu", "Khoa học viễn tưởng"],
+      "director": "James Cameron",
+      "cast": [
+        "Sam Worthington",
+        "Zoe Saldana",
+        "Sigourney Weaver",
+        "Stephen Lang"
+      ],
+      "rating": 8.5,
+      "poster": "https://i.ebayimg.com/images/g/gEoAAOSw84BfOWDp/s-l1200.jpg",
+      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
+      "trailer": "https://youtube.com/watch?v=example",
+      "status": "now-showing",
+      "language": "Tiếng Anh",
+      "ageRating": "PG-13",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Top Gun: Maverick",
+      "originalTitle": "Top Gun: Maverick",
+      "description": "Sau hơn ba mười năm phục vụ như một trong những phi công hàng đầu của Hải quân, Pete 'Maverick' Mitchell ở nơi anh thuộc về, thúc đẩy phong bì như một phi công thử nghiệm dũng cảm và né tránh sự thăng tiến trong cấp bậc sẽ đưa anh ra khỏi bầu trời.",
+      "duration": 130,
+      "releaseDate": "2022-05-27",
+      "genre": ["Hành động", "Chính kịch"],
+      "director": "Joseph Kosinski",
+      "cast": ["Tom Cruise", "Miles Teller", "Jennifer Connelly", "Jon Hamm"],
+      "rating": 8.7,
+      "poster": "https://sadesign.vn/pictures/picfullsizes/2025/04/26/image(42).png",
+      "backdrop": "https://sdw.sony-asia.com/VN/UserImages/SVN/869_Topgunngang.jpg",
+      "status": "now-showing",
+      "language": "Tiếng Anh",
+      "ageRating": "PG-13",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Black Panther: Wakanda Forever",
+      "originalTitle": "Black Panther: Wakanda Forever",
+      "description": "Nữ hoàng Ramonda, Shuri, M'Baku, Okoye và Dora Milaje chiến đấu để bảo vệ quốc gia của họ khỏi các thế lực can thiệp sau cái chết của Vua T'Challa.",
+      "duration": 161,
+      "releaseDate": "2022-11-11",
+      "genre": ["Hành động", "Phiêu lưu", "Khoa học viễn tưởng"],
+      "director": "Ryan Coogler",
+      "cast": [
+        "Letitia Wright",
+        "Angela Bassett",
+        "Tenoch Huerta",
+        "Danai Gurira"
+      ],
+      "rating": 7.8,
+      "poster": "https://i.pinimg.com/originals/e3/4c/2d/e34c2d62f140b748b0d323d4a2788140.png",
+      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
+      "status": "now-showing",
+      "language": "Tiếng Anh",
+      "ageRating": "PG-13"
+    },
+    {
+      "id": 4,
+      "title": "Spider-Man: No Way Home",
+      "originalTitle": "Spider-Man: No Way Home",
+      "description": "Với danh tính Spider-Man hiện đã được tiết lộ, Peter yêu cầu Doctor Strange giúp đỡ. Khi một phép thuật đi sai, những kẻ thù nguy hiểm từ các thế giới khác bắt đầu xuất hiện, buộc Peter phải khám phá ý nghĩa thực sự của việc trở thành Spider-Man.",
+      "duration": 148,
+      "releaseDate": "2021-12-17",
+      "genre": ["Hành động", "Phiêu lưu", "Khoa học viễn tưởng"],
+      "director": "Jon Watts",
+      "cast": [
+        "Tom Holland",
+        "Zendaya",
+        "Benedict Cumberbatch",
+        "Jacob Batalon"
+      ],
+      "rating": 8.9,
+      "poster": "https://m.media-amazon.com/images/I/61ux6FzCdGL._AC_SL1280_.jpg",
+      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
+      "status": "now-showing",
+      "language": "Tiếng Anh",
+      "ageRating": "PG-13"
+    },
+    {
+      "id": 5,
+      "title": "The Batman",
+      "originalTitle": "The Batman",
+      "description": "Khi Riddler, một kẻ giết người tâm thần, bắt đầu giết chết các nhân vật chính trị quan trọng ở Gotham, Batman phải tìm ra manh mối để bắt kẻ thủ phạm và mang lại công lý cho thành phố tham nhũng.",
+      "duration": 176,
+      "releaseDate": "2022-03-04",
+      "genre": ["Hành động", "Tội phạm", "Chính kịch"],
+      "director": "Matt Reeves",
+      "cast": [
+        "Robert Pattinson",
+        "Zoë Kravitz",
+        "Paul Dano",
+        "Jeffrey Wright"
+      ],
+      "rating": 8.2,
+      "poster": "https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_.jpg",
+      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
+      "status": "coming-soon",
+      "language": "Tiếng Anh",
+      "ageRating": "PG-13"
+    },
+    {
+      "id": 6,
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "originalTitle": "Doctor Strange in the Multiverse of Madness",
+      "description": "Doctor Strange, với sự giúp đỡ của những đồng minh huyền bí cả cũ và mới, đi qua những thực tế thay thế đáng kinh ngạc và nguy hiểm của Multiverse để đối mặt với một kẻ thù bí ẩn mới.",
+      "duration": 126,
+      "releaseDate": "2022-05-06",
+      "genre": ["Hành động", "Phiêu lưu", "Kinh dị"],
+      "director": "Sam Raimi",
+      "cast": [
+        "Benedict Cumberbatch",
+        "Elizabeth Olsen",
+        "Chiwetel Ejiofor",
+        "Benedict Wong"
+      ],
+      "rating": 7.5,
+      "poster": "https://m.media-amazon.com/images/I/71xefrbhS8S._AC_SL1500_.jpg",
+      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
+      "status": "coming-soon",
+      "language": "Tiếng Anh",
+      "ageRating": "PG-13"
+    },
+    {
+      "id": 7,
+      "title": "Minions: The Rise of Gru",
+      "originalTitle": "Minions: The Rise of Gru",
+      "description": "Một phần tiếp theo của Minions (2015), kể về tuổi thơ của Gru và cách anh gặp những Minions trung thành của mình.",
+      "duration": 87,
+      "releaseDate": "2022-07-01",
+      "genre": ["Hoạt hình", "Hài", "Gia đình"],
+      "director": "Kyle Balda",
+      "cast": [
+        "Steve Carell",
+        "Pierre Coffin",
+        "Alan Arkin",
+        "Taraji P. Henson"
+      ],
+      "rating": 7.1,
+      "poster": "https://d1j8r0kxyu9tj8.cloudfront.net/files/1582782582h5DhM7zcUDHc3kY.jpg",
+      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
+      "status": "coming-soon",
+      "language": "Tiếng Anh",
+      "ageRating": "G"
+    },
+    {
+      "id": 8,
+      "title": "Jurassic World Dominion",
+      "originalTitle": "Jurassic World Dominion",
+      "description": "Bốn năm sau khi đảo Isla Nublar bị phá hủy, khủng long hiện sống và săn mồi cùng với con người trên khắp thế giới. Sự cân bằng mong manh này sẽ định hình lại tương lai và xác định, một lần và mãi mãi, liệu con người có tiếp tục là những kẻ săn mồi hàng đầu trên hành tinh mà họ hiện chia sẻ với những sinh vật đáng sợ nhất trong lịch sử hay không.",
+      "duration": 147,
+      "releaseDate": "2022-06-10",
+      "genre": ["Hành động", "Phiêu lưu", "Khoa học viễn tưởng"],
+      "director": "Colin Trevorrow",
+      "cast": ["Chris Pratt", "Bryce Dallas Howard", "Laura Dern", "Sam Neill"],
+      "rating": 6.8,
+      "poster": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1700270983",
+      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
+      "status": "coming-soon",
+      "language": "Tiếng Anh",
+      "ageRating": "PG-13"
+    }
+  ]
+}

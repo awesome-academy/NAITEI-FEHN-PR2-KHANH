@@ -1,7 +1,7 @@
 {
   "movies": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Avatar: The Way of Water",
       "originalTitle": "Avatar: The Way of Water",
       "description": "Jake Sully sống cùng gia đình mới của mình trên hành tinh Pandora. Khi một mối đe dọa quen thuộc trở lại để hoàn thành những gì đã bắt đầu trước đây, Jake phải làm việc với Neytiri và quân đội của chủng tộc Na'vi để bảo vệ hành tinh của họ.",
@@ -25,7 +25,7 @@
       "featured": true
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Top Gun: Maverick",
       "originalTitle": "Top Gun: Maverick",
       "description": "Sau hơn ba mười năm phục vụ như một trong những phi công hàng đầu của Hải quân, Pete 'Maverick' Mitchell ở nơi anh thuộc về, thúc đẩy phong bì như một phi công thử nghiệm dũng cảm và né tránh sự thăng tiến trong cấp bậc sẽ đưa anh ra khỏi bầu trời.",
@@ -43,7 +43,7 @@
       "featured": true
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Black Panther: Wakanda Forever",
       "originalTitle": "Black Panther: Wakanda Forever",
       "description": "Nữ hoàng Ramonda, Shuri, M'Baku, Okoye và Dora Milaje chiến đấu để bảo vệ quốc gia của họ khỏi các thế lực can thiệp sau cái chết của Vua T'Challa.",
@@ -65,7 +65,7 @@
       "ageRating": "PG-13"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Spider-Man: No Way Home",
       "originalTitle": "Spider-Man: No Way Home",
       "description": "Với danh tính Spider-Man hiện đã được tiết lộ, Peter yêu cầu Doctor Strange giúp đỡ. Khi một phép thuật đi sai, những kẻ thù nguy hiểm từ các thế giới khác bắt đầu xuất hiện, buộc Peter phải khám phá ý nghĩa thực sự của việc trở thành Spider-Man.",
@@ -87,7 +87,7 @@
       "ageRating": "PG-13"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "The Batman",
       "originalTitle": "The Batman",
       "description": "Khi Riddler, một kẻ giết người tâm thần, bắt đầu giết chết các nhân vật chính trị quan trọng ở Gotham, Batman phải tìm ra manh mối để bắt kẻ thủ phạm và mang lại công lý cho thành phố tham nhũng.",
@@ -109,7 +109,7 @@
       "ageRating": "PG-13"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Doctor Strange in the Multiverse of Madness",
       "originalTitle": "Doctor Strange in the Multiverse of Madness",
       "description": "Doctor Strange, với sự giúp đỡ của những đồng minh huyền bí cả cũ và mới, đi qua những thực tế thay thế đáng kinh ngạc và nguy hiểm của Multiverse để đối mặt với một kẻ thù bí ẩn mới.",
@@ -131,7 +131,7 @@
       "ageRating": "PG-13"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Minions: The Rise of Gru",
       "originalTitle": "Minions: The Rise of Gru",
       "description": "Một phần tiếp theo của Minions (2015), kể về tuổi thơ của Gru và cách anh gặp những Minions trung thành của mình.",
@@ -153,7 +153,7 @@
       "ageRating": "G"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Jurassic World Dominion",
       "originalTitle": "Jurassic World Dominion",
       "description": "Bốn năm sau khi đảo Isla Nublar bị phá hủy, khủng long hiện sống và săn mồi cùng với con người trên khắp thế giới. Sự cân bằng mong manh này sẽ định hình lại tương lai và xác định, một lần và mãi mãi, liệu con người có tiếp tục là những kẻ săn mồi hàng đầu trên hành tinh mà họ hiện chia sẻ với những sinh vật đáng sợ nhất trong lịch sử hay không.",
@@ -168,6 +168,88 @@
       "status": "coming-soon",
       "language": "Tiếng Anh",
       "ageRating": "PG-13"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "fullName": "Admin User",
+      "avatar": "https://i.pinimg.com/736x/db/ee/c0/dbeec07ebeba6a6e81f1e10036f291bd.jpg",
+      "phoneNumber": "0123456789",
+      "role": "admin",
+      "createdAt": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "email": "user@example.com",
+      "password": "user123",
+      "fullName": "Regular User",
+      "avatar": "https://i.pinimg.com/474x/7a/3a/32/7a3a3241ca11d4c4f092f13b11c27a46.jpg",
+      "phoneNumber": "0987654321",
+      "role": "user",
+      "createdAt": "2023-01-02T00:00:00.000Z"
+    },
+    {
+      "id": "1749786416240",
+      "fullName": "Đặng Xuân Khanh",
+      "email": "khanhdang3152@gmail.com",
+      "password": "sssssssssss",
+      "phoneNumber": "0378989454",
+      "avatar": "https://i.pinimg.com/474x/7a/3a/32/7a3a3241ca11d4c4f092f13b11c27a46.jpg",
+      "role": "user",
+      "createdAt": "2025-06-13T03:46:56.240Z"
+    },
+    {
+      "id": "1749798349917",
+      "fullName": "khanh dang",
+      "email": "khanhdang@gmail.com",
+      "password": "khanhdang123",
+      "phoneNumber": "0378989454",
+      "avatar": "https://i.pinimg.com/474x/7a/3a/32/7a3a3241ca11d4c4f092f13b11c27a46.jpg",
+      "role": "user",
+      "createdAt": "2025-06-13T07:05:49.917Z"
+    },
+    {
+      "id": "1749804356164",
+      "fullName": "nguyen van a",
+      "email": "anguyen@gmail.com",
+      "password": "khanhdang123",
+      "phoneNumber": "0987654321",
+      "avatar": "https://i.pinimg.com/474x/7a/3a/32/7a3a3241ca11d4c4f092f13b11c27a46.jpg",
+      "role": "user",
+      "createdAt": "2025-06-13T08:45:56.164Z"
+    },
+    {
+      "id": "1749804503941",
+      "fullName": "dang xuan khanh",
+      "email": "khanhxuandang@gmail.com",
+      "password": "khanhdang123",
+      "phoneNumber": "0987654322",
+      "avatar": "https://i.pinimg.com/474x/7a/3a/32/7a3a3241ca11d4c4f092f13b11c27a46.jpg",
+      "role": "user",
+      "createdAt": "2025-06-13T08:48:23.941Z"
+    },
+    {
+      "id": "1749804623445",
+      "fullName": "Trần Thị Bích Ngọc",
+      "email": "bichngoc.tran@example.com",
+      "password": "Passw0rd@\t",
+      "phoneNumber": "0987654321",
+      "avatar": "https://i.pinimg.com/474x/7a/3a/32/7a3a3241ca11d4c4f092f13b11c27a46.jpg",
+      "role": "user",
+      "createdAt": "2025-06-13T08:50:23.445Z"
+    },
+    {
+      "id": "1749805928246",
+      "fullName": "Lê Minh Khoa\t",
+      "email": "le.khoa1995@example.com",
+      "password": "Qwe123$$",
+      "phoneNumber": "0909123456",
+      "avatar": "/image.png",
+      "role": "user",
+      "createdAt": "2025-06-13T09:12:08.246Z"
     }
   ]
 }

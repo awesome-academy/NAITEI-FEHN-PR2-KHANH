@@ -1,12 +1,14 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Movie } from "~/interfaces/movie";
+import axios from "axios";
+
+export const baseURL = "http://localhost:3001";
 
 export const useMovies = () => {
-  const baseURL = "http://localhost:3001";
   const getMovies = async (): Promise<Movie[]> => {
     try {
-      const data = await $fetch<Movie[]>(`${baseURL}/movies`);
-      return data;
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const response = await axios.get<Movie[]>(`${baseURL}/movies`);
+      return response.data;
     } catch (error) {
       return [];
     }
@@ -16,9 +18,10 @@ export const useMovies = () => {
     status: Movie["status"]
   ): Promise<Movie[]> => {
     try {
-      const data = await $fetch<Movie[]>(`${baseURL}/movies?status=${status}`);
-      return data;
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const response = await axios.get<Movie[]>(`${baseURL}/movies`, {
+        params: { status },
+      });
+      return response.data;
     } catch (error) {
       return [];
     }
@@ -26,9 +29,10 @@ export const useMovies = () => {
 
   const getFeaturedMovies = async (): Promise<Movie[]> => {
     try {
-      const data = await $fetch<Movie[]>(`${baseURL}/movies?featured=true`);
-      return data;
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const response = await axios.get<Movie[]>(`${baseURL}/movies`, {
+        params: { featured: true },
+      });
+      return response.data;
     } catch (error) {
       return [];
     }
@@ -36,9 +40,8 @@ export const useMovies = () => {
 
   const getMovieById = async (id: number): Promise<Movie | null> => {
     try {
-      const data = await $fetch<Movie>(`${baseURL}/movies/${id}`);
-      return data;
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const response = await axios.get<Movie>(`${baseURL}/movies/${id}`);
+      return response.data;
     } catch (error) {
       return null;
     }

@@ -1,13 +1,18 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
+import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      watch: {
+        ignored: ["**/server/db.json"],
+      },
+    },
   },
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", "vue-toastification/dist/index.css"],
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",
@@ -18,4 +23,7 @@ export default defineNuxtConfig({
     "@nuxt/test-utils",
     "@nuxt/ui",
   ],
+  build: {
+    transpile: ["vue-toastification"],
+  },
 });

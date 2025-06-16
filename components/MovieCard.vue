@@ -56,17 +56,26 @@
         >
           {{ genre }}
         </span>
+        <span
+          v-if="movie.genre.length > 2"
+          class="px-2 py-1 bg-gray-600 text-gray-400 text-xs rounded"
+        >
+          +{{ movie.genre.length - 2 }}
+        </span>
       </div>
 
-      <button class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded transition-colors">
-        {{ movie.status === 'now-showing' ? 'Đặt vé' : 'Xem chi tiết' }}
-      </button>
+      <NuxtLink
+        :to="`/movies/${movie.id}`"
+        class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded transition-colors block text-center"
+      >
+        {{ movie.status === 'now-showing' ? 'Đặt vé ngay' : 'Xem chi tiết' }}
+      </NuxtLink>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { getStatusText , formatDate} from '~/constants/common';
+import { getStatusText, formatDate } from '~/constants/common'
 import type { Movie } from '~/interfaces/movie'
 
 interface Props {

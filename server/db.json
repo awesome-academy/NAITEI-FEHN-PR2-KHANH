@@ -16,9 +16,9 @@
         "Stephen Lang"
       ],
       "rating": 8.5,
-      "poster": "https://i.ebayimg.com/images/g/gEoAAOSw84BfOWDp/s-l1200.jpg",
-      "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
-      "trailer": "https://youtube.com/watch?v=example",
+      "poster": "https://m.media-amazon.com/images/S/pv-target-images/f0535dd61f56bddd6ee7f3bfb765645e45d78f373418ae37ee5103cf6eebbff0.jpg",
+      "backdrop": "https://ntvb.tmsimg.com/assets/p12460960_v_h8_an.jpg?w=960&h=540",
+      "trailer": "https://www.youtube.com/embed/d9MyW72ELq0",
       "status": "now-showing",
       "language": "Tiếng Anh",
       "ageRating": "PG-13",
@@ -35,12 +35,13 @@
       "director": "Joseph Kosinski",
       "cast": ["Tom Cruise", "Miles Teller", "Jennifer Connelly", "Jon Hamm"],
       "rating": 8.7,
-      "poster": "https://sadesign.vn/pictures/picfullsizes/2025/04/26/image(42).png",
+      "poster": "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/3/image/c5f0a1eff4c394a251036189ccddaacd/t/o/top_gun_maverick_-_poster_28.03_1_.jpg",
       "backdrop": "https://sdw.sony-asia.com/VN/UserImages/SVN/869_Topgunngang.jpg",
       "status": "now-showing",
       "language": "Tiếng Anh",
       "ageRating": "PG-13",
-      "featured": true
+      "featured": true,
+      "trailer": "https://www.youtube.com/embed/qSqVVswa420"
     },
     {
       "id": "3",
@@ -62,7 +63,8 @@
       "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
       "status": "now-showing",
       "language": "Tiếng Anh",
-      "ageRating": "PG-13"
+      "ageRating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/_Z3QKkl1WyM"
     },
     {
       "id": "4",
@@ -84,7 +86,8 @@
       "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
       "status": "now-showing",
       "language": "Tiếng Anh",
-      "ageRating": "PG-13"
+      "ageRating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/JfVOs4VSpmA"
     },
     {
       "id": "5",
@@ -106,7 +109,8 @@
       "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
       "status": "coming-soon",
       "language": "Tiếng Anh",
-      "ageRating": "PG-13"
+      "ageRating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/mqqft2x_Aa4"
     },
     {
       "id": "6",
@@ -128,7 +132,8 @@
       "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
       "status": "coming-soon",
       "language": "Tiếng Anh",
-      "ageRating": "PG-13"
+      "ageRating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/aWzlQ2N6qqg"
     },
     {
       "id": "7",
@@ -150,7 +155,8 @@
       "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
       "status": "coming-soon",
       "language": "Tiếng Anh",
-      "ageRating": "G"
+      "ageRating": "G",
+      "trailer": "https://www.youtube.com/embed/nLMs9nCKvN8"
     },
     {
       "id": "8",
@@ -167,7 +173,152 @@
       "backdrop": "https://cdnb.artstation.com/p/assets/images/images/026/475/643/large/spencer-owen-i-am-lisa-landscape.jpg?1588873984",
       "status": "coming-soon",
       "language": "Tiếng Anh",
-      "ageRating": "PG-13"
+      "ageRating": "PG-13",
+      "trailer": "https://www.youtube.com/embed/fb5ELWi-ekk"
+    }
+  ],
+  "cinemas": [
+    {
+      "id": "1",
+      "name": "CinemaX Vincom Center",
+      "address": "191 ABC, Hai Bà Trưng, Hà Nội",
+      "phone": "024-3936-0000",
+      "facilities": ["IMAX", "4DX", "VIP", "Parking"]
+    },
+    {
+      "id": "2",
+      "name": "CinemaX Royal City",
+      "address": "72 BCD, Thanh Xuân, Hà Nội",
+      "phone": "024-3936-1111",
+      "facilities": ["IMAX", "VIP", "Parking", "Food Court"]
+    },
+    {
+      "id": "3",
+      "name": "CinemaX Times City",
+      "address": "458 XYZ, Hai Bà Trưng, Hà Nội",
+      "phone": "024-3936-2222",
+      "facilities": ["4DX", "ScreenX", "VIP", "Parking"]
+    },
+    {
+      "id": "4",
+      "name": "CinemaX Lotte Center",
+      "address": "54 AAA, Ba Đình, Hà Nội",
+      "phone": "024-3936-3333",
+      "facilities": ["IMAX", "VIP", "Parking"]
+    }
+  ],
+  "showtimes": [
+    {
+      "id": "1",
+      "movieId": "1",
+      "cinemaId": "1",
+      "date": "2025-06-16",
+      "times": ["09:00", "11:30", "14:00", "16:30", "19:00", "21:30"],
+      "format": {
+        "type": "2D",
+        "name": "2D Phụ đề",
+        "price": 85000
+      },
+      "availableSeats": 120,
+      "totalSeats": 150
+    },
+    {
+      "id": "2",
+      "movieId": "1",
+      "cinemaId": "1",
+      "date": "2025-06-16",
+      "times": ["10:15", "13:00", "15:45", "18:30", "21:15"],
+      "format": {
+        "type": "3D",
+        "name": "3D Phụ đề",
+        "price": 120000
+      },
+      "availableSeats": 80,
+      "totalSeats": 100
+    },
+    {
+      "id": "3",
+      "movieId": "1",
+      "cinemaId": "2",
+      "date": "2025-06-16",
+      "times": ["08:45", "11:15", "13:45", "16:15", "18:45", "21:15"],
+      "format": {
+        "type": "2D",
+        "name": "2D Phụ đề",
+        "price": 80000
+      },
+      "availableSeats": 140,
+      "totalSeats": 180
+    },
+    {
+      "id": "4",
+      "movieId": "1",
+      "cinemaId": "2",
+      "date": "2025-06-16",
+      "times": ["12:00", "15:00", "18:00", "21:00"],
+      "format": {
+        "type": "IMAX",
+        "name": "IMAX 2D",
+        "price": 180000
+      },
+      "availableSeats": 200,
+      "totalSeats": 250
+    },
+    {
+      "id": "5",
+      "movieId": "1",
+      "cinemaId": "3",
+      "date": "2025-06-16",
+      "times": ["09:30", "12:00", "14:30", "17:00", "19:30", "22:00"],
+      "format": {
+        "type": "2D",
+        "name": "2D Phụ đề",
+        "price": 75000
+      },
+      "availableSeats": 90,
+      "totalSeats": 120
+    },
+    {
+      "id": "6",
+      "movieId": "1",
+      "cinemaId": "3",
+      "date": "2025-06-16",
+      "times": ["13:30", "16:00", "20:30"],
+      "format": {
+        "type": "4DX",
+        "name": "4DX",
+        "price": 250000
+      },
+      "availableSeats": 40,
+      "totalSeats": 60
+    },
+    {
+      "id": "7",
+      "movieId": "2",
+      "cinemaId": "1",
+      "date": "2025-06-16",
+      "times": ["09:15", "11:45", "14:15", "16:45", "19:15", "21:45"],
+      "format": {
+        "type": "2D",
+        "name": "2D Phụ đề",
+        "price": 85000
+      },
+      "availableSeats": 110,
+      "totalSeats": 150
+    },
+    {
+      "id": "8",
+      "movieId": "2",
+      "cinemaId": "2",
+      "date": "2025-06-16",
+      "times": ["10:30", "13:15", "16:00", "18:45", "21:30"],
+      "format": {
+        "type": "IMAX",
+        "name": "IMAX 2D",
+        "price": 180000
+      },
+      "availableSeats": 180,
+      "totalSeats": 250
     }
   ],
   "users": [

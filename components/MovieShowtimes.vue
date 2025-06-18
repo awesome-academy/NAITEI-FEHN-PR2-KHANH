@@ -58,8 +58,8 @@
 
             <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
               <button
-                v-for="time in formatGroup.times"
-                :key="time"
+                v-for="(time, timeIndex) in formatGroup.times"
+                :key="`${time}-${timeIndex}`"
                 :class="[
                   'py-2 px-3 rounded text-sm font-medium transition-colors',
                   isTimeAvailable(time)
@@ -67,7 +67,7 @@
                     : 'bg-gray-600 text-gray-400 cursor-not-allowed'
                 ]"
                 :disabled="!isTimeAvailable(time)"
-                @click="selectShowtime(cinemaGroup.cinema, formatGroup.format, time)"
+                @click="selectShowtime(cinemaGroup.cinema, formatGroup.format, time, getShowtimeId(cinemaGroup.cinema.id, formatGroup.format.type, time))"
               >
                 {{ time }}
               </button>
@@ -106,6 +106,19 @@
         </div>
       </div>
     </div>
+
+    <SeatSelectionModal
+      v-if="showSeatSelection && selectedShowtimeData"
+      :movie-id="String(movieId)"
+      :movie-title="movieTitle ?? ''"
+      :cinema="selectedShowtimeData.cinema"
+      :date="selectedDate"
+      :time="selectedShowtimeData.time"
+      :format="selectedShowtimeData.format"
+      :showtime-id="selectedShowtimeData.showtimeId"
+      @close="showSeatSelection = false"
+      @success="handleBookingSuccess"
+    />
   </div>
 </template>
 
@@ -115,9 +128,11 @@ import { useNuxtApp } from '#app'
 import { useAuth } from '~/composables/useAuth'
 import { useShowtimes } from '~/composables/useShowtimes'
 import type { Cinema, Showtime, ShowtimeFormat } from '~/interfaces/cinema'
+import type { Booking } from '~/interfaces/booking'
 
 interface Props {
   movieId: string | number
+  movieTitle?: string
 }
 
 interface DateOption {
@@ -134,6 +149,13 @@ interface GroupedShowtime {
   }[]
 }
 
+interface SelectedShowtimeData {
+  cinema: Cinema
+  format: ShowtimeFormat
+  time: string
+  showtimeId: string
+}
+
 const props = defineProps<Props>()
 
 const toast = useNuxtApp().$toast
@@ -146,7 +168,10 @@ const loading = ref<boolean>(false)
 const cinemas = ref<Cinema[]>([])
 const showtimes = ref<Showtime[]>([])
 const showLoginModal = ref<boolean>(false)
+const showSeatSelection = ref<boolean>(false)
+const selectedShowtimeData = ref<SelectedShowtimeData | null>(null)
 const now = ref(new Date())
+const dayNames = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7']
 
 const generateDates = (): DateOption[] => {
   const dates: DateOption[] = []
@@ -156,7 +181,6 @@ const generateDates = (): DateOption[] => {
     const date = new Date(today)
     date.setDate(today.getDate() + i)
 
-    const dayNames = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7']
     const dayName = i === 0 ? 'Hôm nay' : dayNames[date.getDay()]
 
     dates.push({
@@ -192,7 +216,7 @@ const groupedShowtimes = computed<GroupedShowtime[]>(() => {
     } else {
       grouped[cinema.id].formats.push({
         format: showtime.format,
-        times: [...showtime.times]
+        times: [...showtime.times],
       })
     }
   })
@@ -211,13 +235,30 @@ const isTimeAvailable = (time: string): boolean => {
   return true
 }
 
-const selectShowtime = (cinema: Cinema, format: ShowtimeFormat, time: string): void => {
+const getShowtimeId = (cinemaId: string, formatType: string, time: string): string => {
+  return `${cinemaId}-${formatType}-${selectedDate.value}-${time}`
+}
+
+const selectShowtime = (cinema: Cinema, format: ShowtimeFormat, time: string, showtimeId: string): void => {
   if (!isAuthenticated.value) {
     showLoginModal.value = true
     return
   }
 
-  toast.success(`Đã chọn suất chiếu ${time} - ${format.name} tại ${cinema.name}`)
+  selectedShowtimeData.value = {
+    cinema,
+    format,
+    time,
+    showtimeId
+  }
+
+  showSeatSelection.value = true
+}
+
+const handleBookingSuccess = (booking: Booking): void => {
+  toast.success(`Đặt vé thành công! Mã đặt vé: ${booking.id}`)
+  showSeatSelection.value = false
+  selectedShowtimeData.value = null
 }
 
 const handleDateChange = async (date: string): Promise<void> => {

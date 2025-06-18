@@ -150,7 +150,7 @@
 
             <div v-if="movie.status === 'now-showing'">
               <h2 class="text-2xl font-bold text-white mb-6">Lịch chiếu</h2>
-              <MovieShowtimes :movie-id="movie.id" />
+              <MovieShowtimes :movie-id="movie.id" :movie-title="movie.title" />
             </div>
           </div>
 

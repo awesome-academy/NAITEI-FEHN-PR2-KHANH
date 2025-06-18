@@ -402,5 +402,87 @@
       "role": "user",
       "createdAt": "2025-06-13T09:12:08.246Z"
     }
+  ],
+  "bookings": [
+    {
+      "id": "1750056924373",
+      "userId": "1749798349917",
+      "movieId": "2",
+      "cinemaId": "1",
+      "showtimeId": "1-2D-2025-06-16-14:15",
+      "movieTitle": "Top Gun: Maverick",
+      "cinemaName": "CinemaX Vincom Center",
+      "date": "2025-06-16",
+      "time": "14:15",
+      "format": "2D Phụ đề",
+      "seats": ["A1", "A2"],
+      "totalAmount": 170000,
+      "status": "confirmed",
+      "bookingDate": "2025-06-16T06:55:24.373Z"
+    },
+    {
+      "id": "1750056932596",
+      "userId": "1749798349917",
+      "movieId": "2",
+      "cinemaId": "1",
+      "showtimeId": "1-2D-2025-06-16-16:45",
+      "movieTitle": "Top Gun: Maverick",
+      "cinemaName": "CinemaX Vincom Center",
+      "date": "2025-06-16",
+      "time": "16:45",
+      "format": "2D Phụ đề",
+      "seats": ["A2", "A4", "A5"],
+      "totalAmount": 255000,
+      "status": "confirmed",
+      "bookingDate": "2025-06-16T06:55:32.596Z"
+    },
+    {
+      "id": "1750057262168",
+      "userId": "1749798349917",
+      "movieId": "1",
+      "cinemaId": "1",
+      "showtimeId": "1-2D-2025-06-16-16:30",
+      "movieTitle": "Avatar: The Way of Water",
+      "cinemaName": "CinemaX Vincom Center",
+      "date": "2025-06-16",
+      "time": "16:30",
+      "format": "2D Phụ đề",
+      "seats": ["A1"],
+      "totalAmount": 85000,
+      "status": "confirmed",
+      "bookingDate": "2025-06-16T07:01:02.168Z"
+    },
+    {
+      "id": "1750058064102",
+      "userId": "1749798349917",
+      "movieId": "1",
+      "cinemaId": "1",
+      "showtimeId": "1-2D-2025-06-16-16:30",
+      "movieTitle": "Avatar: The Way of Water",
+      "cinemaName": "CinemaX Vincom Center",
+      "date": "2025-06-16",
+      "time": "16:30",
+      "format": "2D Phụ đề",
+      "seats": ["A4", "A3"],
+      "totalAmount": 170000,
+      "status": "confirmed",
+      "bookingDate": "2025-06-16T07:14:24.102Z"
+    },
+    {
+      "id": "1750061727576",
+      "userId": "1749798349917",
+      "movieId": "1",
+      "cinemaId": "1",
+      "showtimeId": "1-2D-2025-06-16-16:30",
+      "movieTitle": "Avatar: The Way of Water",
+      "cinemaName": "CinemaX Vincom Center",
+      "date": "2025-06-16",
+      "time": "16:30",
+      "format": "2D Phụ đề",
+      "seats": ["D6", "D7"],
+      "totalAmount": 170000,
+      "status": "confirmed",
+      "bookingDate": "2025-06-16T08:15:27.576Z"
+    }
   ]
 }

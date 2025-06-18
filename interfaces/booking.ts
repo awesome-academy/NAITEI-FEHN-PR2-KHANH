@@ -18,6 +18,6 @@ export interface Booking {
   format: string;
   seats: string[];
   totalAmount: number;
-  status: "confirmed" | "cancelled";
+  status: "confirmed";
   bookingDate: string;
 }

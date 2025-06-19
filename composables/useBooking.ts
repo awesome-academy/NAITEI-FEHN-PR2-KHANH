@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import type { Booking } from "~/interfaces/booking";
 import axios from "axios";
@@ -12,7 +13,7 @@ export const useBooking = () => {
         params: { showtimeId },
       });
       return response.data;
-    } catch (error) {
+    } catch (error: any) {
       return [];
     }
   };
@@ -32,12 +33,10 @@ export const useBooking = () => {
         newBooking
       );
       return { success: true, booking: response.data };
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       return {
         success: false,
-        error:
-          error.response?.data?.message ?? error.message ?? "Đặt vé thất bại",
+        error: "Đặt vé thất bại",
       };
     }
   };
@@ -51,7 +50,7 @@ export const useBooking = () => {
         (a, b) =>
           new Date(b.bookingDate).getTime() - new Date(a.bookingDate).getTime()
       );
-    } catch (error) {
+    } catch (error: any) {
       return [];
     }
   };

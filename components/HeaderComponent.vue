@@ -20,6 +20,13 @@
           <NuxtLink to="/promotions" class="text-gray-300 hover:text-white transition-colors">
             Khuyến mãi
           </NuxtLink>
+          <NuxtLink
+            v-if="currentUser?.role === 'admin'"
+            to="/admin"
+            class="text-gray-300 hover:text-white transition-colors"
+          >
+            Admin
+          </NuxtLink>
         </nav>
 
         <div class="flex items-center space-x-4">
@@ -70,6 +77,13 @@
                 </NuxtLink>
                 <NuxtLink to="/bookings" class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white">
                   Vé đã đặt
+                </NuxtLink>
+                <NuxtLink
+                  v-if="currentUser?.role === 'admin'"
+                  to="/admin"
+                  class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
+                >
+                  Quản trị hệ thống
                 </NuxtLink>
                 <button
                   type="button"

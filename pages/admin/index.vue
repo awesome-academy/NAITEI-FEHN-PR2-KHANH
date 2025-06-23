@@ -79,7 +79,7 @@
           </NuxtLink>
 
           <NuxtLink
-            to="/movies"
+            to="/admin/movies"
             class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-gray-600 transition-colors group"
           >
             <div class="flex items-center space-x-4">
@@ -87,8 +87,8 @@
                 <UIcon name="i-heroicons-film" class="w-6 h-6 text-green-400" />
               </div>
               <div>
-                <h3 class="text-lg font-semibold text-white">Xem danh sách phim</h3>
-                <p class="text-gray-400 text-sm">Xem tất cả phim trong hệ thống</p>
+                <h3 class="text-lg font-semibold text-white">Quản lý phim</h3>
+                <p class="text-gray-400 text-sm">Thêm, sửa, xóa phim trong hệ thống</p>
               </div>
             </div>
           </NuxtLink>
@@ -193,6 +193,12 @@ import type { Booking } from '~/interfaces/booking'
 import type { User } from '~/interfaces/user'
 
 const { currentUser, isAuthenticated } = useAuth()
+const dashboardData = ref<DashboardData>({
+  bookings: [],
+  users: [],
+  movies: []
+})
+const pending = ref(true)
 
 useHead({
   title: 'Dashboard Admin - CinemaX',
@@ -203,13 +209,6 @@ useHead({
     }
   ]
 })
-
-const dashboardData = ref<DashboardData>({
-      bookings: [],
-      users: [],
-      movies: []
-    })
-const pending = ref(true)
 
 onMounted(async () => {
   if (!isAuthenticated.value || currentUser.value?.role !== 'admin') {
@@ -223,7 +222,6 @@ onMounted(async () => {
   const data = await fetchDashboardData()
   dashboardData.value = data
   pending.value = false
-
 })
 
 const stats = computed<DashboardStats>(() => {

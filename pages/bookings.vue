@@ -45,7 +45,7 @@
                         : 'bg-red-500/20 text-red-400 border border-red-500/30'
                     ]"
                   >
-                    {{ getStatusText(booking.status) }}
+                    {{ getBookingStatusText(booking.status) }}
                   </span>
                 </div>
               </div>
@@ -81,7 +81,7 @@
                   Đặt lúc: {{ formatDateTime(booking.bookingDate) }}
                 </div>
                 <div class="text-xl font-bold text-red-400">
-                  {{ booking.totalAmount.toLocaleString('vi-VN') }}đ
+                  {{ formatCurrency(booking.totalAmount) }}
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@
 
             <div>
               <label class="text-sm text-gray-400">Tổng tiền</label>
-              <p class="text-xl font-bold text-red-400">{{ selectedBooking.totalAmount.toLocaleString('vi-VN') }}đ</p>
+              <p class="text-xl font-bold text-red-400">{{ formatCurrency(selectedBooking.totalAmount) }}</p>
             </div>
 
             <div>
@@ -162,7 +162,7 @@
                     : 'bg-red-500/20 text-red-400 border border-red-500/30'
                 ]"
               >
-                {{ getStatusText(selectedBooking.status) }}
+                {{ getBookingStatusText(selectedBooking.status) }}
               </span>
             </div>
           </div>
@@ -186,6 +186,7 @@ import { ref } from 'vue'
 import { useHead, useLazyAsyncData, navigateTo } from '#app'
 import { useAuth } from '~/composables/useAuth'
 import { useBooking } from '~/composables/useBooking'
+import { getBookingStatusText, formatDate, formatDateTime, formatCurrency } from '~/utils/formatters'
 import type { Booking } from '~/interfaces/booking'
 
 useHead({
@@ -205,9 +206,6 @@ const showDetailsModal = ref<boolean>(false)
 const selectedBooking = ref<Booking | null>(null)
 
 const isAuth = ref(isAuthenticated.value)
-if (!isAuth.value) {
-  await navigateTo('/login')
-}
 
 const { data: bookings, pending } = await useLazyAsyncData(
   'user-bookings',
@@ -220,30 +218,8 @@ const { data: bookings, pending } = await useLazyAsyncData(
   }
 )
 
-const getStatusText = (status: Booking['status']): string => {
-  if (status === 'confirmed') {
-    return 'Đã xác nhận'
-  }
-  return status
-}
-
-const formatDate = (dateString: string): string => {
-  return new Date(dateString).toLocaleDateString('vi-VN', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  })
-}
-
-const formatDateTime = (dateString: string): string => {
-  return new Date(dateString).toLocaleString('vi-VN', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  })
+if (!isAuth.value) {
+  await navigateTo('/login')
 }
 
 

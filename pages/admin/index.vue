@@ -92,6 +92,21 @@
               </div>
             </div>
           </NuxtLink>
+          <NuxtLink
+            to="/admin/showtimes"
+            class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-gray-600 transition-colors group"
+          >
+            <div class="flex items-center space-x-4">
+              <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center group-hover:bg-purple-500/30 transition-colors">
+                <UIcon name="i-heroicons-calendar" class="w-6 h-6 text-purple-400" />
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white">Quản lý lịch chiếu</h3>
+                <p class="text-gray-400 text-sm">Thêm, sửa lịch chiếu cho phim</p>
+              </div>
+            </div>
+          </NuxtLink>
+
         </div>
 
         <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 mb-8">

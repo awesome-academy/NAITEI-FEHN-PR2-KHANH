@@ -52,8 +52,8 @@
             <div v-else class="relative">
               <button
                 type="button"
-                @click.stop="toggleUserMenu"
                 class="flex items-center space-x-2 text-gray-300 hover:text-white focus:outline-none"
+                @click.stop="toggleUserMenu"
               >
                 <div class="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center overflow-hidden">
                   <img
@@ -85,10 +85,17 @@
                 >
                   Quản trị hệ thống
                 </NuxtLink>
+                <NuxtLink
+                  v-if="currentUser?.role === 'admin'"
+                  to="/admin/showtimes"
+                  class="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
+                >
+                  Quản lý lịch chiếu
+                </NuxtLink>
                 <button
                   type="button"
-                  @click.stop="handleLogout"
                   class="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white"
+                  @click.stop="handleLogout"
                 >
                   Đăng xuất
                 </button>

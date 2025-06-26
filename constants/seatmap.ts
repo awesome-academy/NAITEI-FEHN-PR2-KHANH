@@ -10,3 +10,8 @@ export const SEAT_MAP = {
     H: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   },
 };
+
+export const TOTAL_SEATS = Object.values(SEAT_MAP.rows).reduce(
+  (total, row) => total + row.length,
+  0
+);

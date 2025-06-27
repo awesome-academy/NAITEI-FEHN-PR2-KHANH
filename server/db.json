@@ -672,6 +672,16 @@
       "avatar": "/image.png",
       "role": "user",
       "createdAt": "2025-06-13T09:12:08.246Z"
+    },
+    {
+      "id": "1751012269029",
+      "fullName": "test khanh",
+      "email": "khanhdang111@gmail.com",
+      "password": "khanhdang123",
+      "phoneNumber": "0987654322",
+      "avatar": "/image.png",
+      "role": "user",
+      "createdAt": "2025-06-27T08:17:49.029Z"
     }
   ],
   "bookings": [
